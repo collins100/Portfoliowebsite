@@ -1,0 +1,191 @@
+/* CSS Document */
+@media only screen and (min-width : 320px) and (max-width : 562px) {
+
+#globalWrapper{
+	margin: 0 auto;
+}
+
+#globalWrapper .jumbotron .container-fluid p{
+	text-align:start;
+}
+
+a.button{
+	padding: 0.7em 0.3em 0.7em 0.3em;
+	font-weight: 200;
+	line-height: 100%;
+	font-size: 14px;
+}
+
+.textContainer{
+	position: relative;
+	left: -10%;
+}
+
+#gallery{
+	width: 100%;
+	margin-left:0;
+	margin-right: 0;
+	margin-bottom: 5%;
+	margin-top: 0;
+	padding: 0;
+	left: -8%;
+}
+
+.footerGroup{
+	width: 100%;
+	padding: 2.5%;
+	height: auto;
+}
+
+.footerDescription{
+	padding-top: 0;
+	margin-top: 1%;
+}
+
+.footerDescription p{
+	padding-left: 2.8%;
+	margin-top: 0;
+}
+
+.footerLinks{
+	margin-top: 4%;
+	margin-left: 0;
+	padding-left: 0;
+	right: 4%;
+	
+}
+
+.footerLinks .socialLinks .icon{
+	flex-direction: row!important; 
+}
+/*
+.footerLinks p{
+	display: none;
+}*/
+
+.descriptionDt{
+	display: inline;
+}
+
+.descriptionDt{
+	padding-right: 3%; 
+	padding-left: 3%;
+	margin-left: 2%;
+	margin-right: 5%;
+}
+
+.descriptionDd{
+	display:none;
+}
+	
+}
+@media only screen and (min-width : 563px) and (max-width : 800px) {
+	a.button{
+	padding: 0.7em 0.3em 0.7em 0.3em;
+	font-weight: 200;
+	line-height: 100%;
+	font-size: 14px;
+}
+
+
+.footerGroup{
+	width: 100%;
+	padding: 0;
+	height: auto;
+}
+
+.footerDescription{
+	padding-top: 0px;
+	margin-top: 20px;
+}
+
+.footerDescription p{
+	padding-left: 20px;
+	margin-top: 14px;
+}
+
+
+.footerLinks {
+	left: -6%;
+}
+
+
+.third{
+	margin-top: 5%;
+	margin-right: 20%;
+	margin-left: 20%;
+}
+.descriptionDt{
+	display: Inline;
+	padding-right: 20%;
+}
+
+.descriptionDt: nth-child(3){
+	padding-right: 0;
+}
+
+.descriptionDd{
+	display:none;
+}
+}
+
+@media only screen and (min-width:801px) and (max-width : 989px) {
+
+a.button{
+	padding: 0.7em 0.3em 0.7em 0.3em;
+	font-weight: 200;
+	line-height: 100%;
+	font-size: 14px;
+}
+
+
+.footerGroup{
+	width: 100%;
+	padding: 0;
+	height: auto;
+}
+
+.footerDescription{
+	padding-top: 0px;
+	margin-top: 1%;
+	margin-bottom: 0.4%;
+	padding-bottom: 0;
+}
+
+.footerDescription p{
+	padding-left: 20px;
+	margin-top: 0.5%;
+}
+
+.footerLinks{
+	margin-top: 3%;
+	padding-top: 0;
+	margin-bottom:0;
+	padding-bottom: 0;
+	left: -5%;
+}
+/*
+.footerLinks p{
+	display: none;
+}
+*/
+
+.third{
+	margin-top: 5%;
+	margin-right: 15%;
+	margin-left: 15%;
+}
+.descriptionDt{
+	display: Inline;
+	padding-right: 30%;
+}
+
+.descriptionDt: nth-child(3){
+	padding-right: 0;
+}
+
+.descriptionDd{
+	display:none;
+}
+
+}
