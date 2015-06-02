@@ -48,6 +48,7 @@ html, body {
     padding: 0;
 	font-family: 'Montserrat', sans-serif;
 	float: left;
+	width: 100%;
 }
 
 nav{
@@ -56,30 +57,47 @@ nav{
 
 /*-----  Nav     -----*/
 
-
-
-.group:before, .group:after {
-  content: "";
-  display: table;
-}
-
-.group:after {
-  clear: both;
-}
-
 .navbar{
 	border-top: 3px solid #2098d1!important;
 }
 
-.nav li a{
-	color: rgba(255,255,255,1.00)!important;
-	font-weight: 600!important;
+#navbar-collapse-1 li a{
+	color: rgba(255,255,255,1.00);
+	font-weight: 600;
 }
 
-.nav li a:hover{
+
+
+#navbar-collapse ul li:active a{
+	border-bottom: 3px solid #2098d1;
+}
+
+
+#navbar-collapse-1 li a:hover{
+	color: #2098d1;
+	background: none;
+} 
+
+#navbar-collapse-1 li.active a{
+	background:none;
+	border-bottom: 3px solid #2098d1;
+}
+
+/*
+#navbar-collapse-1 .navbar-nav .active{
+	background: none!important;
+}
+
+#navbar-collapse-1 .navbar-nav a:active{
 	color: #2098d1!important;
+	background: none!important;
+	border-bottom: 3px solid #2098d1!important;
 }
 
+#navbar-collapse-1 .active:active{
+	background-color: none!important;
+}
+*/
 .navbar-brand{
 	color: rgba(255,255,255,1.00)!important;
 }
@@ -166,6 +184,18 @@ a.button:hover{
 	padding-right: 1.5%;
 }
 
+.group:before, .group:after {
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.textContainer{
+	width: 100%;
+}
 
 .textContainer:before, .textContainer:after {
   content: "";
@@ -176,7 +206,7 @@ a.button:hover{
 	clear: both;
 }
 
-.textContainer .featured{
+.textContainer.featured{
 	margin: 0 auto;
 }
 
@@ -228,7 +258,8 @@ ul, menu, dir {
 }
 */
 
-.three-up{
+
+.textContainer .three-up{
 	display: flex;
 	display: -webkit-box;
 	display:-webkit-flex;
@@ -242,6 +273,7 @@ ul, menu, dir {
 	-webkit-flex: 1;
 	flex: 1;
 }
+
 .three-up a:link, a:visited{
 	text-decoration: none;
 }
@@ -256,7 +288,11 @@ ul, menu, dir {
 		margin-right:0;
 };
 
-.three-up li{
+.textContainer li a{
+	width: 32%;
+}
+ 
+.three-up{
 	width: 32%;
 }
 .three-up{
@@ -264,25 +300,33 @@ ul, menu, dir {
 }
 
 @media only sreen and (min-width: 568px) and (max-width : 850px){
-.three-up li{
+.three-up>*{
 	width: 46.5%;
 }
+
+.textContainer three-up li a{
+	width: 46.5%;
+}
+
 .three-up{
 	padding: 0;
 	margin: 0.3%;
 }
 }
+
 @media only sreen and (min-width: 320px) and (max-width : 562px){
-.three-up li{
+.three-up>*{
 	width: 100%;
+	margin: 0 auto;
 }	
 
 .three-up{
 	padding: 0;
-	margin: 0;
+	margin: 0 auto;
 }
 }
-.textContainer li a {
+
+.textContainer .three-up li a {
     display:block;
     height: 230px;
     width: 296px;
@@ -298,6 +342,7 @@ ul, menu, dir {
 	-o-flex:1;
 	-webkit-flex:1;
 	flex:1;
+	padding: 1.8%;
 }
 
 a {
@@ -557,6 +602,7 @@ p {
 .github{
 	border: 1px solid #FFFFFF;
 }*/
+
 /*---------------------------------------------------------------------------------------------
 Contact
 ------------------------------------------------------------------------------------------------*/
@@ -689,14 +735,25 @@ input[type=checkbox] {
 	border: 1px #DADADA;
 	color: #C43C3E;
 }
-
+/*
 .contactWrapper{
-	margin: 20px;
+	display: flex;
+	display: -webkit-box;
+	display:-webkit-flex;
+	display: -ms-flexbox;
+	-ms-justify-content:center;
+	-webkit-justify-content:center;
+	justify-content:center;
+	-webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-flex: 1;
+	flex: 1;
 }
-
+*/
 #contactBox {
 	position: relative;
-	margin: auto 0;
+	margin: 0 auto;
 	padding:10px 0;
 	height: auto;
 	width: 50%;

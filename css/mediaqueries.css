@@ -1,4 +1,24 @@
 /* CSS Document */
+@media only screen and (min-width : 240px) and (max-width : 320px) {
+	#globalWrapper .jumbotron .container-fluid{
+		margin: 0;
+		padding: 0;
+	}
+	#globalWrapper .jumbotron .container-fluid p{
+		text-align: left;
+		/*position: relative;
+		left: -50px;*/
+	}
+	
+	#globalWrapper .jumbotron .container-fluid h2{
+		text-align: left;
+	}
+	.group{
+		margin: 0;
+		padding: 0;
+	}
+}
+
 @media only screen and (min-width : 320px) and (max-width : 562px) {
 
 #globalWrapper{
@@ -38,9 +58,14 @@ a.button{
 }
 
 .footerDescription{
+	width: 100%
 	padding-top: 0;
 	margin-top: 1%;
+	padding-bottom: 3.5%;
+	border-bottom: 2px solid #B7B7B7;
 }
+
+
 
 .footerDescription p{
 	padding-left: 2.8%;
@@ -48,11 +73,13 @@ a.button{
 }
 
 .footerLinks{
+	width: 100%;
 	margin-top: 4%;
 	margin-left: 0;
 	padding-left: 0;
 	right: 4%;
-	
+	border-bottom: 2px solid #B7B7B7;
+	padding-bottom: 2.5%;
 }
 
 .footerLinks .socialLinks .icon{
@@ -68,9 +95,9 @@ a.button{
 }
 
 .descriptionDt{
-	padding-right: 3%; 
+	padding-right: 3.5%; 
 	padding-left: 3%;
-	margin-left: 2%;
+	margin-left: 3.6%;
 	margin-right: 5%;
 }
 
@@ -95,8 +122,11 @@ a.button{
 }
 
 .footerDescription{
+	width: 100%;
 	padding-top: 0px;
 	margin-top: 20px;
+	padding-bottom: 2.8%;
+	border-bottom: 2px solid #B7B7B7;
 }
 
 .footerDescription p{
@@ -106,11 +136,14 @@ a.button{
 
 
 .footerLinks {
+	width: 100%;
 	left: -6%;
+	border-bottom: 2px solid #B7B7B7;
 }
 
 
 .third{
+	
 	margin-top: 5%;
 	margin-right: 20%;
 	margin-left: 20%;
@@ -146,10 +179,12 @@ a.button{
 }
 
 .footerDescription{
+	width: 100%;
 	padding-top: 0px;
 	margin-top: 1%;
 	margin-bottom: 0.4%;
 	padding-bottom: 0;
+	border-bottom: 2px solid #B7B7B7;
 }
 
 .footerDescription p{
@@ -163,6 +198,11 @@ a.button{
 	margin-bottom:0;
 	padding-bottom: 0;
 	left: -5%;
+}
+
+.footerLinks{
+	width: 100%;
+	border-bottom: 2px solid #B7B7B7;
 }
 /*
 .footerLinks p{
